@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        //const img = document.createElement('img');
+
+        //° Criamos um array vazio
+        //let arr = ['Categoria A', 1, img, {nome: 'teste'}, 0.1];
+
+        // let arr = ['Categoria D', 'Categoria Z', 'Categoria U', 'Categoria L', 5, 2, 6];
+
+        // console.log(arr[1]);
+        // console.log(arr.length);
+
+        // 1° indice - 2° quantidade - 3° passo
+        // for (let i = 0; i < arr.length; i++) {
+        //     console.log(arr[i]);
+        // }
+        
+
+        // let contador = 0;
+
+        // while (contador < arr.length) {
+        //     console.log(arr[contador]);
+        //     contador++;
+        // }
+
+
+        // arr.forEach(element => {
+        //     console.log(element);
+        // });
+        
+        //splice e slice
+
+        //coloquei 
+        // arr.push('Categoria D','Categoria F');
+        // console.log(arr);
+
+        //tirei
+        // arr.pop();
+        // console.log(arr);
+        
+
+        //junção
+        //join retorna um valor, tendo esse retorno ele não modifica o array, ele continua o mesmo
+        // let teste = arr.join(" - ")
+        // console.log(arr, teste);
+
+        //ordenar os valores do meu vetor
+        // console.log(arr.sort());
+        // console.log(arr.sort().reverse());
+
+        
+        // let arr = [
+        //     {numero: 1, descricao: 'um'},
+        //     {numero: 2, descricao: 'dois'},
+        //     {numero: 3, descricao: 'tres'}
+        // ];
+        
+        //.MAP = mapear o nosso array - para cada elemento ele vai mapear uma ação - ele funciona da mesma forma que o for, porém ele retorna algo
+        // let novo_arr = arr.map(element =>{
+        //     return element.numero;
+        // });
+
+        let arr = [090, '50'];
+
+        // let novo_arr = arr.map(element =>{
+        //     if (element >= 30) {
+        //         return element;
+        //     }
+        // })
+
+        ///FILTER = filtrar elementos dentro do array
+        // let novo_arr = arr.filter(element =>{
+        //     return element >= 30;
+        // })
+
+        // REDUCE = reduzir o nosso array a um valor, vai ter um retorno
+        let novo_arr = arr.reduce((total, element) =>{
+            // let inteiro = Number(element);
+            return Number(total) + Number(element);
+        })
+
+        console.log(arr, novo_arr);
+    </script>
+</body>
+</html>
